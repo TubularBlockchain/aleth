@@ -83,6 +83,8 @@ find_package(libscrypt CONFIG REQUIRED)
 hunter_add_package(ethash)
 find_package(ethash CONFIG REQUIRED)
 
+set( ETHASH_PATH ${ETHASH_ROOT} PARENT_SCOPE )
+
 message("Crypto++: ${HUNTER_cryptopp_VERSION}")
 
 include(ProjectSecp256k1)
